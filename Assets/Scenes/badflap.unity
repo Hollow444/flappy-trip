@@ -810,6 +810,7 @@ GameObject:
   - component: {fileID: 1029679744}
   - component: {fileID: 1029679743}
   - component: {fileID: 1029679742}
+  - component: {fileID: 1029679745}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -940,6 +941,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1029679745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029679741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b448e852b7e3734e8a468145d7fea5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: 363ade80aeabf9a468edf76f8ede4ca1, type: 3}
+  - {fileID: 8300000, guid: 5055ca627b7e84340ba407bb98abb168, type: 3}
+  - {fileID: 8300000, guid: ef5cba5f5a3c7a64baa0db8031948f58, type: 3}
+  - {fileID: 8300000, guid: c53015507f284f4428a1b8ce24e8ff3e, type: 3}
+  - {fileID: 8300000, guid: 89187c03bf6255c49a620fa43bad464f, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  Player: {fileID: 0}
 --- !u!1 &1047647937
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,6 +1171,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1376846022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1376846024}
+  - component: {fileID: 1376846023}
+  m_Layer: 0
+  m_Name: cowbell pawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1376846023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376846022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2515c5c5c4ffc489637e32a63174b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTime: 4.5
+  cowbell: {fileID: 4254724142955155113, guid: 61764136e7453ae498c097194ff42812, type: 3}
+  height: 2
+--- !u!4 &1376846024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376846022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.74, y: 0, z: -4.800414}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1417514202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,7 +1748,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -860621220, guid: 31516b4359587e24abbc15f6cb27c61b, type: 3}
+  m_Sprite: {fileID: -285425208, guid: 6b3c2391954551f478cd0f704d85012e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1694,7 +1768,7 @@ Transform:
   m_GameObject: {fileID: 1768362974}
   m_LocalRotation: {x: -0, y: -0, z: -0.008241299, w: 0.9999661}
   m_LocalPosition: {x: -0.8523, y: 0.2262, z: 0}
-  m_LocalScale: {x: 0.08281015, y: 0.07589708, z: 0.14903046}
+  m_LocalScale: {x: 0.08281015, y: 0.07589709, z: 0.14903046}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1792,7 +1866,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.12, y: 6.44}
+    oldSize: {x: 1, y: 0.76}
     newSize: {x: 14.656832, y: 13.257028}
     adaptiveTilingThreshold: 0.5
     drawMode: 1
