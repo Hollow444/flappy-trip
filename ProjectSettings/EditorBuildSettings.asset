@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/shop.unity
     guid: 178d858a2837eb04a91fffedd8982f86
-  - enabled: 0
-    path: "Assets/\u041F\u0435\u0440\u0435\u0434 \u0434\u0438\u0447\u044C\u044E.unity"
-    guid: 28b7c6285ec2e344ba22f9c57d0e4052
   - enabled: 1
     path: Assets/Scenes/badflap.unity
     guid: f36c9ab542ea2f24e90a560768a9538d
+  - enabled: 1
+    path: Assets/Scenes/LoadScene.unity
+    guid: e21aee5681e7e5842bdbab006b120956
   m_configObjects: {}

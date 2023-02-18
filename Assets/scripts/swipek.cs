@@ -9,13 +9,28 @@ public class swipek : MonoBehaviour
     public GameObject scrollbar;
     float scroll_pos = 0;
     float[] pos;
-
+    int posis = 0;
     // Start is called before the first frame update
     void Start()
     {
 
     }
-
+    public void next()
+    {
+        if (posis < pos.Length - 1) 
+        {
+            posis += 1;
+            scroll_pos = pos[posis];
+        }
+    }
+    public void back()
+    {
+        if (posis > 0)
+        {
+            posis -= 1;
+            scroll_pos = pos[posis];
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -25,7 +40,7 @@ public class swipek : MonoBehaviour
         {
             pos[i] = distance * i;
         }
-        if (Input.GetMouseButton(0))
+        if (Input.touchCount > 0)
         {
             scroll_pos = scrollbar.GetComponent<Scrollbar>().value;
 
@@ -50,6 +65,7 @@ public class swipek : MonoBehaviour
                     if (a != i)
                     {
                         transform.GetChild(a).localScale = Vector2.Lerp(transform.GetChild(a).localScale, new Vector2(0.8f, 0.8f), 0.1f);
+                        posis = i;
                     }
                 }
             }

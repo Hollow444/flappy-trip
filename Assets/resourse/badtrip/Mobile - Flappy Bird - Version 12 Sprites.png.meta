@@ -125,6 +125,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1742,8 +1754,8 @@ TextureImporter:
       Mobile - Flappy Bird - Version 12 Sprites_54: 1780388023
       Mobile - Flappy Bird - Version 12 Sprites_66: -1890075760
       Mobile - Flappy Bird - Version 12 Sprites_61: -443980829
+      Mobile - Flappy Bird - Version 12 Sprites_19: -1510750373
       Mobile - Flappy Bird - Version 12 Sprites_1: 212873899
-      Mobile - Flappy Bird - Version 12 Sprites_44: -557487826
       Mobile - Flappy Bird - Version 12 Sprites_32: -962190149
       Mobile - Flappy Bird - Version 12 Sprites_60: -761872302
       Mobile - Flappy Bird - Version 12 Sprites_52: 396494462
@@ -1752,7 +1764,7 @@ TextureImporter:
       Mobile - Flappy Bird - Version 12 Sprites_26: 1786268800
       Mobile - Flappy Bird - Version 12 Sprites_46: -1332894515
       Mobile - Flappy Bird - Version 12 Sprites_41: -1893834574
-      Mobile - Flappy Bird - Version 12 Sprites_19: -1510750373
+      Mobile - Flappy Bird - Version 12 Sprites_44: -557487826
       Mobile - Flappy Bird - Version 12 Sprites_34: -1395192574
       Mobile - Flappy Bird - Version 12 Sprites_63: -1265487507
       Mobile - Flappy Bird - Version 12 Sprites_23: -723769742
